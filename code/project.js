@@ -1,4 +1,4 @@
-var url="https://api.github.com/users/abdalkalk/repos?per_page=5"
+var url="https://api.github.com/users/abdalkalk/repos?sort=pushed&per_page=5"
 
      
 $(document).ready(function(){
@@ -6,8 +6,7 @@ $(document).ready(function(){
     $.get(url, function(data){
         $.each(data,function(key,v){
 
-                 console.log(v.name);
-
+                 console.log(v.name)
         })
             });
 });
