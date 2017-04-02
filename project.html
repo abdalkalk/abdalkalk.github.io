@@ -43,8 +43,8 @@
 		
 </head>
 <body>
- <header id="navigation" class="navbar-fixed-top">
-            <div class="container" style="background:rgba(15,116,143,0.8);margin-left:30px;">
+<header id="navigation" class="navbar-fixed-top">
+            <div class="container" style="background:rgba(15,116,143,1);margin-left:30px;">
 
                 <div class="navbar-header">
                     <!-- responsive nav button -->
@@ -69,9 +69,9 @@
                     <!-- main nav -->
                     <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                         <ul id="nav" class="nav navbar-nav">
-                            <li class="current"><a href="#home">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="skills.html">Skills</a></li>
-                            <li><a href="project.html">Projects</a></li>
+                            <li class="current"><a href="#">Projects</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="youtube.html">Youtube</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -83,6 +83,7 @@
             </div>
         </header>
 
+        <br>
   <section id="portfolio">
 
             <div class="section-title text-center wow fadeInDown">
@@ -93,12 +94,17 @@
                 <ul class="list-inline">
                     <li><a href="javascript:;" class="filter" data-filter="all" id="a">Current</a></li>
                     <li><a href="javascript:;" class="filter" data-filter=".app">Favourite</a></li>
-                   
+                    <br>
+                    <nav class="project-filter clearfix text-center wow fadeInLeft"  data-wow-delay="2s">
+                   <ul class="list-inline">
+                    
+                     <li><a href="javascript:;" class="filter" data-filter="all"><h5 id="proj"></h5></a></li>
+                      </ul>
+                  </nav>
                 </ul>
+               
             </nav>
-        <div>
-            <p id="proj"></p>
-        </div>
+
            
         </section>
         <!--

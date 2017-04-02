@@ -11,7 +11,7 @@ $(document).ready(function(){
 
                 // $(`#proj`).append("<p><a href="'+v.html_url+'">'+v.name+'"</a></p>"+"<p>Created at: "+formatDate(date)+"</p><br>")
 
-                $(`#proj`).append('<li><a href="'+v.html_url+'">'+v.name+'</li><br><p>created at:'+ formatDate(date)+'<br>')
+                $(`#proj`).append('<li><a href="'+v.html_url+'">'+v.name+'</li><p>created at:'+ formatDate(date)+'<br><br>')
                
 			})
 		});
@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 })
 
-$('#result').append('<a href='+`${itm['html_url']}`+'>'+`${itm['name']}`+'</a><br/><br>'+`${itm['created_at']}`);
+//$('#result').append('<a href='+`${itm['html_url']}`+'>'+`${itm['name']}`+'</a><br>'+`${itm['created_at']}`);
 
 
 function formatDate(date) {
