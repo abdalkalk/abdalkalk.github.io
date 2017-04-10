@@ -2,7 +2,13 @@ var url="https://api.github.com/users/abdalkalk/repos?sort=pushed&per_page=5"
 
 
 $(document).ready(function(){
+	$("#Favourite").click(function(){
+		$(`#project`).html('')
+        $(`#showfavourite`).show();
+	})
 	
+
+
 	$("#Current").click(function(){
 		$(`#project`).html('')
 		$.get(url, function(data){
@@ -20,6 +26,10 @@ $(document).ready(function(){
 })
 
 //$('#result').append('<a href='+`${itm['html_url']}`+'>'+`${itm['name']}`+'</a><br>'+`${itm['created_at']}`);
+
+
+
+
 
 
 function formatDate(date) {
@@ -40,4 +50,3 @@ function formatDate(date) {
   return  date.getDate() + "/" + monthNames[monthIndex] + "/" + date.getFullYear() + "   Time: " + strTime;
 
 }
-
