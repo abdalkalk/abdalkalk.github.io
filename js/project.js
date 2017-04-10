@@ -3,15 +3,15 @@ var url="https://api.github.com/users/abdalkalk/repos?sort=pushed&per_page=5"
 
 $(document).ready(function(){
 	
-	$("#a").click(function(){
-		$(`#proj`).html('')
+	$("#Current").click(function(){
+		$(`#project`).html('')
 		$.get(url, function(data){
 			$.each(data,function(key,v){
 				var date=new Date(v.created_at);
 
                 // $(`#proj`).append("<p><a href="'+v.html_url+'">'+v.name+'"</a></p>"+"<p>Created at: "+formatDate(date)+"</p><br>")
 
-                $(`#proj`).append('<li><a href="'+v.html_url+'">'+v.name+'</li><p>created at:'+ formatDate(date)+'<br><br>')
+                $(`#project`).append('<li><a href="'+v.html_url+'">'+v.name+'</li><p>created at:'+ formatDate(date)+'<br><br>')
                
 			})
 		});
