@@ -17,12 +17,12 @@
 		},
 		{
 			"name":"JavaScript",
-			"cssclass":"fa fa-html5",
+			"cssclass":" ",
 			"description":" is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them."
 		},
 		{
 			"name":"Jquery",
-			"cssclass":"fa fa-html5",
+			"cssclass":" ",
 			"description":" is a JavaScript Library, greatly simplifies JavaScript programming, and jQuery is easy to learn."
 		}
 	]
