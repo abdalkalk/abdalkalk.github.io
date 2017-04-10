@@ -11,6 +11,8 @@ $(document).ready(function(){
 
 	$("#Current").click(function(){
 		$(`#project`).html('')
+		$(`#showfavourite`).hide();
+
 		$.get(url, function(data){
 			$.each(data,function(key,v){
 				var date=new Date(v.created_at);
